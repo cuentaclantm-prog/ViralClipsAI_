@@ -29,6 +29,7 @@ def download_video(url, folder, progress):
         "outtmpl": str(folder / "source.%(ext)s"),
         "format": "bv*+ba/b",
         "merge_output_format": "mp4",
+        "ffmpeg_location": ffmpeg(),
         "noplaylist": True,
         "quiet": True,
         "no_warnings": True,
